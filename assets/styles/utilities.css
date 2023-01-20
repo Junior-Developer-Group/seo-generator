@@ -1,0 +1,43 @@
+*:active,
+*:target,
+*:focus {
+  border: 3px dashed black;
+  outline: none !important;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+input {
+  min-height: 45px;
+  border-radius: 4px;
+  text-indent: 10px;
+  outline: none;
+}
+
+textarea {
+  border-radius: 4px;
+  text-indent: 10px;
+  outline: none;
+}
+
+button {
+  background-color: lightgrey;
+  border: none;
+  min-height: 45px;
+  padding: 10px 35px;
+  border-radius: 4px;
+  transition: 300ms all ease-in-out;
+  outline: none;
+}
+
+button:hover {
+  background-color: grey;
+  padding: 10px 40px;
+}
