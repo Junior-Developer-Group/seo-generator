@@ -1,0 +1,42 @@
+.form-group{
+	margin-bottom: 1rem;
+	border:none;
+}
+
+.form-group__instruction{
+	display: block;
+}
+
+.form-group__label{
+	display: block;
+	margin-bottom:1rem;
+}
+
+.form-group__input-wrapper{
+	width: 100%;
+	max-width: 400px;
+}
+
+#input-keywords{
+	width: 100%;
+	min-height: 100px;
+}
+
+.form-group__message{
+	color: #c04000;
+}
+
+@media screen and (min-width: 768px) {
+	.form-group{
+		display: flex;
+		align-items: flex-start;			
+	}
+
+	.form-group__input{
+		flex:1;
+	}
+
+	.form-group__label{
+		margin-right:1rem;
+	}
+}
