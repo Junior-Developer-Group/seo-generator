@@ -7,13 +7,22 @@
 	<title>SEO Generator</title>
 	<link rel="stylesheet" href="./assets/styles/base.css">
 </head>
+
 <body class="english">
-	<section class="form-section">
+	<main>
 		<form action="#" class="form">
-			<!-- INPUT ELEMENTS HERE -->
+			<fieldset class="form-group">
+				<label for="input-keywords" class="form-group__label">
+					Keywords: <span class="form-group__instruction">(separated by comma)</span>
+				</label>
+				<div class="form-group__input-wrapper">
+					<textarea class="form-group__input" id="input-keywords" placeholder="Example: keyword1, keyword2" autocomplete="off"></textarea>
+					<strong class="form-group__message" id="input-keywords__message" role="alert" aria-live="assertive"></strong>
+				</div>
+			</fieldset>
 			<button type="submit">Submit</button>
 		</form>
-	</section>
-	<script src="./assets/scripts/scripts.js"></script>
+	</main>
+	<script src="./assets/scripts/scripts.js" type="module"></script>
 </body>
 </html>
