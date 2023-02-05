@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +7,22 @@
 	<title>SEO Generator</title>
 	<link rel="stylesheet" href="./assets/styles/base.css">
 </head>
-<body>
+
+<body class="english">
 	<main>
-		<fieldset class="form-group">
-			<label for="input-keywords" class="form-group__label">
-				Keywords: <span class="form-group__instruction">(separated by comma)</span>
-			</label>
-			<div class="form-group__input-wrapper">
-				<textarea class="form-group__input" id="input-keywords" placeholder="Example: keyword1, keyword2" autocomplete="off"></textarea>
-				<strong class="form-group__message" id="input-keywords__message" role="alert" aria-live="assertive"></strong>
-			</div>
-		</fieldset>
+		<form class="form" onsubmit="submit()">
+			<fieldset class="form-group">
+				<label for="input-keywords" class="form-group__label">
+					Keywords: <span class="form-group__instruction">(separated by comma)</span>
+				</label>
+				<div class="form-group__input-wrapper">
+					<textarea class="form-group__input" id="input-keywords" placeholder="Example: keyword1, keyword2" autocomplete="off"></textarea>
+					<strong class="form-group__message" id="input-keywords__message" role="alert" aria-live="assertive"></strong>
+				</div>
+			</fieldset>
+			<button type="submit">Submit</button>
+		</form>
 	</main>
-	<script src="./assets/scripts/scripts.js"></script>
+	<script src="./assets/scripts/scripts.js" type="module"></script>
 </body>
 </html>
